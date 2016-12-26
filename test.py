@@ -26,7 +26,7 @@ def main():
             payload += "\""+key+"\":\""+value+"\""
     payload += "}"
     send_payload = eval(payload)
-    method = raw_input("Request method [ GET | POST ]").lower()
+    method = raw_input("Request method [ GET | POST ]: ").lower()
     isOk = raw_input("Desired output: ")
     if method=="post":
         result = session_request.post(
